@@ -1,77 +1,280 @@
 <app-searchBar></app-searchBar>
 <app-table></app-table>
-<div class="mat-elevation-z8">
-    <table mat-table [dataSource]="dataSource">
-
-      <!-- Position Column -->
-      <ng-container matColumnDef="serial">
-        <th mat-header-cell *matHeaderCellDef> No </th>
-        <td mat-cell *matCellDef="let element"> {{element.serial}} </td>
-      </ng-container>
-
-      <!-- Name Column -->
-      <ng-container matColumnDef="check">
-        <th mat-header-cell *matHeaderCellDef>
-            <mat-checkbox></mat-checkbox>
-        </th>
-        <td mat-cell *matCellDef="let element"> {{element.check}} </td>
-      </ng-container>
-
-      <!-- Weight Column -->
-      <ng-container matColumnDef="id">
-        <th mat-header-cell *matHeaderCellDef> Id No </th>
-        <td mat-cell *matCellDef="let element"> {{element.id}} </td>
-      </ng-container>
-
-      <!-- Symbol Column -->
-      <ng-container matColumnDef="account">
-        <th mat-header-cell *matHeaderCellDef> Account Title </th>
-        <td mat-cell *matCellDef="let element"> {{element.account}} </td>
-      </ng-container>
-
-      <ng-container matColumnDef="date">
-        <th mat-header-cell *matHeaderCellDef> Date </th>
-        <td mat-cell *matCellDef="let element"> {{element.date}} </td>
-      </ng-container>
-
-      <ng-container matColumnDef="type">
-        <th mat-header-cell *matHeaderCellDef> type </th>
-        <td mat-cell *matCellDef="let element"> {{element.type}} </td>
-      </ng-container>
-
-      <ng-container matColumnDef="invoice">
-        <th mat-header-cell *matHeaderCellDef> Invoice No # </th>
-        <td mat-cell *matCellDef="let element"> {{element.invoice}} </td>
-      </ng-container>
-
-      <ng-container matColumnDef="checkno">
-        <th mat-header-cell *matHeaderCellDef> Check No # </th>
-        <td mat-cell *matCellDef="let element"> {{element.checkno}} </td>
-      </ng-container>
-
-      <ng-container matColumnDef="details">
-        <th mat-header-cell *matHeaderCellDef> Details </th>
-        <td mat-cell *matCellDef="let element"> {{element.details}} </td>
-      </ng-container>
-
-      <ng-container matColumnDef="totalamount">
-        <th mat-header-cell *matHeaderCellDef> Total Ammount </th>
-        <td mat-cell *matCellDef="let element"> {{element.totalamount}} </td>
-      </ng-container>
-
-      <ng-container matColumnDef="status">
-        <th mat-header-cell *matHeaderCellDef> Status </th>
-        <td mat-cell *matCellDef="let element"> {{element.status}} </td>
-      </ng-container>
-
-      <ng-container matColumnDef="action">
-        <th mat-header-cell *matHeaderCellDef> Action </th>
-        <td mat-cell *matCellDef="let element"> {{element.action}} </td>
-      </ng-container>
-
-      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-    </table>
-
-    <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
-  </div>
+<div id="content">
+    <div class="container">
+        <div class="transaction-table">
+            <div class="mat-elevation-z8">
+                <table border="1">
+                  <ng-container>
+                    <tr>
+                        <th>#</th>
+                        <th><mat-checkbox></mat-checkbox></th>
+                        <th>Id</th>
+                        <th>Account Title</th>
+                        <th>Date</th>
+                        <th>Type</th>
+                        <th>Invoice No #</th>
+                        <th>Check No</th>
+                        <th>Details</th>
+                        <th>Total Amount</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                    <tr>
+                        <td>#</td>
+                        <td><mat-checkbox></mat-checkbox></td>
+                        <td>Id</td>
+                        <td>Account Title</td>
+                        <td>Date</td>
+                        <td>Type</td>
+                        <td>Invoice No #</td>
+                        <td>Check No</td>
+                        <td>Details</td>
+                        <td>Total Amount</td>
+                        <td>Status</td>
+                        <td>Action</td>
+                    </tr>
+                    <tr>
+                        <td>#</td>
+                        <td><mat-checkbox></mat-checkbox></td>
+                        <td>Id</td>
+                        <td>Account Title</td>
+                        <td>Date</td>
+                        <td>Type</td>
+                        <td>Invoice No #</td>
+                        <td>Check No</td>
+                        <td>Details</td>
+                        <td>Total Amount</td>
+                        <td>Status</td>
+                        <td>Action</td>
+                    </tr>
+                    <tr>
+                        <td>#</td>
+                        <td><mat-checkbox></mat-checkbox></td>
+                        <td>Id</td>
+                        <td>Account Title</td>
+                        <td>Date</td>
+                        <td>Type</td>
+                        <td>Invoice No #</td>
+                        <td>Check No</td>
+                        <td>Details</td>
+                        <td>Total Amount</td>
+                        <td>Status</td>
+                        <td>Action</td>
+                    </tr>
+                    <tr>
+                        <td>#</td>
+                        <td><mat-checkbox></mat-checkbox></td>
+                        <td>Id</td>
+                        <td>Account Title</td>
+                        <td>Date</td>
+                        <td>Type</td>
+                        <td>Invoice No #</td>
+                        <td>Check No</td>
+                        <td>Details</td>
+                        <td>Total Amount</td>
+                        <td>Status</td>
+                        <td>Action</td>
+                    </tr>
+                    <tr>
+                        <td>#</td>
+                        <td><mat-checkbox></mat-checkbox></td>
+                        <td>Id</td>
+                        <td>Account Title</td>
+                        <td>Date</td>
+                        <td>Type</td>
+                        <td>Invoice No #</td>
+                        <td>Check No</td>
+                        <td>Details</td>
+                        <td>Total Amount</td>
+                        <td>Status</td>
+                        <td>Action</td>
+                    </tr>
+                    <tr>
+                        <td>#</td>
+                        <td><mat-checkbox></mat-checkbox></td>
+                        <td>Id</td>
+                        <td>Account Title</td>
+                        <td>Date</td>
+                        <td>Type</td>
+                        <td>Invoice No #</td>
+                        <td>Check No</td>
+                        <td>Details</td>
+                        <td>Total Amount</td>
+                        <td>Status</td>
+                        <td>Action</td>
+                    </tr>
+                    <tr>
+                        <td>#</td>
+                        <td><mat-checkbox></mat-checkbox></td>
+                        <td>Id</td>
+                        <td>Account Title</td>
+                        <td>Date</td>
+                        <td>Type</td>
+                        <td>Invoice No #</td>
+                        <td>Check No</td>
+                        <td>Details</td>
+                        <td>Total Amount</td>
+                        <td>Status</td>
+                        <td>Action</td>
+                    </tr>
+                    <tr>
+                        <td>#</td>
+                        <td><mat-checkbox></mat-checkbox></td>
+                        <td>Id</td>
+                        <td>Account Title</td>
+                        <td>Date</td>
+                        <td>Type</td>
+                        <td>Invoice No #</td>
+                        <td>Check No</td>
+                        <td>Details</td>
+                        <td>Total Amount</td>
+                        <td>Status</td>
+                        <td>Action</td>
+                    </tr>
+                    <tr>
+                        <td>#</td>
+                        <td><mat-checkbox></mat-checkbox></td>
+                        <td>Id</td>
+                        <td>Account Title</td>
+                        <td>Date</td>
+                        <td>Type</td>
+                        <td>Invoice No #</td>
+                        <td>Check No</td>
+                        <td>Details</td>
+                        <td>Total Amount</td>
+                        <td>Status</td>
+                        <td>Action</td>
+                    </tr>
+                    <tr>
+                        <td>#</td>
+                        <td><mat-checkbox></mat-checkbox></td>
+                        <td>Id</td>
+                        <td>Account Title</td>
+                        <td>Date</td>
+                        <td>Type</td>
+                        <td>Invoice No #</td>
+                        <td>Check No</td>
+                        <td>Details</td>
+                        <td>Total Amount</td>
+                        <td>Status</td>
+                        <td>Action</td>
+                    </tr>
+                    <tr>
+                        <td>#</td>
+                        <td><mat-checkbox></mat-checkbox></td>
+                        <td>Id</td>
+                        <td>Account Title</td>
+                        <td>Date</td>
+                        <td>Type</td>
+                        <td>Invoice No #</td>
+                        <td>Check No</td>
+                        <td>Details</td>
+                        <td>Total Amount</td>
+                        <td>Status</td>
+                        <td>Action</td>
+                    </tr>
+                    <tr>
+                        <td>#</td>
+                        <td><mat-checkbox></mat-checkbox></td>
+                        <td>Id</td>
+                        <td>Account Title</td>
+                        <td>Date</td>
+                        <td>Type</td>
+                        <td>Invoice No #</td>
+                        <td>Check No</td>
+                        <td>Details</td>
+                        <td>Total Amount</td>
+                        <td>Status</td>
+                        <td>Action</td>
+                    </tr>
+                    <tr>
+                        <td>#</td>
+                        <td><mat-checkbox></mat-checkbox></td>
+                        <td>Id</td>
+                        <td>Account Title</td>
+                        <td>Date</td>
+                        <td>Type</td>
+                        <td>Invoice No #</td>
+                        <td>Check No</td>
+                        <td>Details</td>
+                        <td>Total Amount</td>
+                        <td>Status</td>
+                        <td>Action</td>
+                    </tr>
+                    <tr>
+                        <td>#</td>
+                        <td><mat-checkbox></mat-checkbox></td>
+                        <td>Id</td>
+                        <td>Account Title</td>
+                        <td>Date</td>
+                        <td>Type</td>
+                        <td>Invoice No #</td>
+                        <td>Check No</td>
+                        <td>Details</td>
+                        <td>Total Amount</td>
+                        <td>Status</td>
+                        <td>Action</td>
+                    </tr>
+                    <tr>
+                        <td>#</td>
+                        <td><mat-checkbox></mat-checkbox></td>
+                        <td>Id</td>
+                        <td>Account Title</td>
+                        <td>Date</td>
+                        <td>Type</td>
+                        <td>Invoice No #</td>
+                        <td>Check No</td>
+                        <td>Details</td>
+                        <td>Total Amount</td>
+                        <td>Status</td>
+                        <td>Action</td>
+                    </tr>
+                    <tr>
+                        <td>#</td>
+                        <td><mat-checkbox></mat-checkbox></td>
+                        <td>Id</td>
+                        <td>Account Title</td>
+                        <td>Date</td>
+                        <td>Type</td>
+                        <td>Invoice No #</td>
+                        <td>Check No</td>
+                        <td>Details</td>
+                        <td>Total Amount</td>
+                        <td>Status</td>
+                        <td>Action</td>
+                    </tr>
+                    <tr>
+                        <td>#</td>
+                        <td><mat-checkbox></mat-checkbox></td>
+                        <td>Id</td>
+                        <td>Account Title</td>
+                        <td>Date</td>
+                        <td>Type</td>
+                        <td>Invoice No #</td>
+                        <td>Check No</td>
+                        <td>Details</td>
+                        <td>Total Amount</td>
+                        <td>Status</td>
+                        <td>Action</td>
+                    </tr>
+                    <tr>
+                        <td>#</td>
+                        <td><mat-checkbox></mat-checkbox></td>
+                        <td>Id</td>
+                        <td>Account Title</td>
+                        <td>Date</td>
+                        <td>Type</td>
+                        <td>Invoice No #</td>
+                        <td>Check No</td>
+                        <td>Details</td>
+                        <td>Total Amount</td>
+                        <td>Status</td>
+                        <td>Action</td>
+                    </tr>
+                  </ng-container>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
