@@ -15,11 +15,19 @@
 
 <mat-drawer-container class="example-container" autosize>
   <mat-drawer #drawer class="example-sidenav" mode="side">
-    <mat-card>Simple card</mat-card>
-    <mat-card>Simple card</mat-card>
-    <mat-card>Simple card</mat-card>
-    <mat-card>Simple card</mat-card>
-    <mat-card>Simple card</mat-card>
+    <div class="menu">
+      <ul>
+        <li>
+          <a href="#">Home<mat-icon>keyboard_arrow_down</mat-icon></a>
+          <ul class="submenu">
+            <li><a href="#">item</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+      </ul>
+    </div>
   </mat-drawer>
 
   <div class="example-sidenav-content">
