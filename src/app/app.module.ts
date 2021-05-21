@@ -13,7 +13,8 @@ import { AppComponent } from './app.component';
 import { SearchBarComponent } from './components/searchBar/searchBar.component';
 import { TableComponent } from './components/table/table.component';
 import { TransactionComponent } from './screens/transaction/transaction.component';
-import {MatMenuModule} from '@angular/material/menu';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatCardModule } from '@angular/material/card';
 
 
 @NgModule({
@@ -28,7 +29,7 @@ import {MatMenuModule} from '@angular/material/menu';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-  
+
 
     MatTableModule,
     MatSidenavModule,
@@ -38,6 +39,7 @@ import {MatMenuModule} from '@angular/material/menu';
     MatPaginatorModule,
     MatCheckboxModule,
     MatMenuModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
