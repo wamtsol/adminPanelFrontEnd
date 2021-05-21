@@ -10,6 +10,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TableComponent } from './components/table/table.component';
 import { TransactionComponent } from './screens/transaction/transaction.component';
+import {MatMenuModule} from '@angular/material/menu';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { TransactionComponent } from './screens/transaction/transaction.componen
     MatSidenavModule,
     MatToolbarModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    MatMenuModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
