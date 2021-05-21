@@ -10,8 +10,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SearchBarComponent } from './components/searchBar/searchBar.component';
 import { TableComponent } from './components/table/table.component';
 import { TransactionComponent } from './screens/transaction/transaction.component';
+import {MatMenuModule} from '@angular/material/menu';
 
 
 @NgModule({
@@ -20,6 +22,7 @@ import { TransactionComponent } from './screens/transaction/transaction.componen
     TransactionComponent,
 
     TableComponent,
+    SearchBarComponent
   ],
   imports: [
     BrowserModule,
@@ -34,6 +37,7 @@ import { TransactionComponent } from './screens/transaction/transaction.componen
     MatButtonModule,
     MatPaginatorModule,
     MatCheckboxModule,
+    MatMenuModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

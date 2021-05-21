@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { MatCheckbox } from '@angular/material/checkbox';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 
@@ -61,4 +62,4 @@ const ELEMENT_DATA: PeriodicElement[] = [
   { serial: 18, check: '<mat-checkbox></mat-checkbox>', id: 1.0079, account: 'ali', date: '12/12/2021', type: 'type', invoice: '12', checkno: '12', details: 'dsfsdfdf', totalamount: '18', status: '12', action: 'eeee' },
   { serial: 19, check: '<mat-checkbox></mat-checkbox>', id: 1.0079, account: 'ali', date: '12/12/2021', type: 'type', invoice: '12', checkno: '12', details: 'dsfsdfdf', totalamount: '19', status: '12', action: 'eeee' },
   { serial: 20, check: '<mat-checkbox></mat-checkbox>', id: 1.0079, account: 'ali', date: '12/12/2021', type: 'type', invoice: '12', checkno: '12', details: 'dsfsdfdf', totalamount: '20', status: '12', action: 'eeee' },
-];3
+];

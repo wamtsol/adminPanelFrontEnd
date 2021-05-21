@@ -12,9 +12,18 @@
 }
 
 .example-sidenav {
-  padding: 20px;
+  padding: 20px 0px;
 }
 
 .example-spacer {
   flex: 1 1 auto;
+}
+button.mat-focus-indicator.mat-button.mat-button-base{
+  display: block;
+  width: 200px;
+  text-align: left;
+  .mat-icon.notranslate.material-icons.mat-icon-no-color {
+    float: right;
+    margin-top: 5px;
+  }
 }
