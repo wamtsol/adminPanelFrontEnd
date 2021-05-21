@@ -7,10 +7,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TableComponent } from './components/table/table.component';
 import { MatTableModule } from '@angular/material/table';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { TransactionComponent } from './screens/transaction/transaction.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    TransactionComponent,
 
     TableComponent
   ],
