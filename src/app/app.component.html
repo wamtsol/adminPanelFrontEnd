@@ -15,20 +15,37 @@
 
 <mat-drawer-container class="example-container" autosize>
   <mat-drawer #drawer class="example-sidenav" mode="side">
-     <!-- <p>Auto-resizing sidenav</p>
+    <!-- <p>Auto-resizing sidenav</p>
     <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
     <button (click)="showFiller = !showFiller" mat-raised-button>
       Toggle extra text
     </button> -->
-    <button (click)="showFiller = !showFiller" mat-button>Above<mat-icon>expand_more</mat-icon>
-    </button>
-    <div class="inr"*ngIf="showFiller">
-    <button  mat-button>Home</button>
-    <button  mat-button>Home</button>
-    <button  mat-button>Home</button>
-    </div>
-    <button (click)="showFiller = !showFiller" mat-button mat-button>Below</button>
-    <button mat-button>Before</button>
+    <button mat-button [matMenuTriggerFor]="aboveMenu">Above</button>
+<!-- #docregion menu-position -->
+<mat-menu #aboveMenu="matMenu" yPosition="above">
+<!-- #enddocregion menu-position -->
+  <button mat-menu-item>Item 1</button>
+  <button mat-menu-item>Item 2</button>
+</mat-menu>
+
+<button mat-button [matMenuTriggerFor]="belowMenu">Below</button>
+<mat-menu #belowMenu="matMenu" yPosition="below">
+  <button mat-menu-item>Item 1</button>
+  <button mat-menu-item>Item 2</button>
+</mat-menu>
+
+<button mat-button [matMenuTriggerFor]="beforeMenu">Before</button>
+<mat-menu #beforeMenu="matMenu" xPosition="before">
+  <button mat-menu-item>Item 1</button>
+  <button mat-menu-item>Item 2</button>
+</mat-menu>
+
+
+<button mat-button [matMenuTriggerFor]="afterMenu">After</button>
+<mat-menu #afterMenu="matMenu" xPosition="after">
+  <button mat-menu-item>Item 1</button>
+  <button mat-menu-item>Item 2</button>
+</mat-menu>
   </mat-drawer>
 
   <div class="example-sidenav-content">
