@@ -15,6 +15,8 @@ import { TableComponent } from './components/table/table.component';
 import { TransactionComponent } from './screens/transaction/transaction.component';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatCardModule } from '@angular/material/card';
+import { MatDialogModule } from '@angular/material/dialog';
+import { PopupComponent } from './components/popup/popup.component';
 
 
 @NgModule({
@@ -23,7 +25,8 @@ import { MatCardModule } from '@angular/material/card';
     TransactionComponent,
 
     TableComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    PopupComponent
   ],
   imports: [
     BrowserModule,
@@ -40,6 +43,7 @@ import { MatCardModule } from '@angular/material/card';
     MatCheckboxModule,
     MatMenuModule,
     MatCardModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
