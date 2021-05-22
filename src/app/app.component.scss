@@ -32,3 +32,12 @@ button.mat-focus-indicator.mat-menu-trigger.mat-button.mat-button-base{
   padding: 10px;
   
 }
+.mat-expansion-panel:not([class*=mat-elevation-z]) {
+  box-shadow: none !important;
+}
+mat-panel-title.mat-expansion-panel-header-title.ng-tns-c168-2 {
+  display: inline-block;
+  .mat-icon{
+    float: right;
+  }
+}
