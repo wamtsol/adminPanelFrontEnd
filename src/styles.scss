@@ -10,14 +10,6 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-.container {
-  box-sizing: border-box;
-  width: 100%;
-  max-width: 1330px;
-  margin: 0 auto;
-  padding: 0 18px;
-}
-
 .mat-elevation-z8 {
   box-shadow: none !important;
 }
@@ -57,8 +49,6 @@ h2 {
 .cdk-overlay-pane {
   width: 100%;
 }
-
-#mat-dialog-0 {}
 
 .main-popup {
   h2 {
