@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
 import { MatExpansionPanel } from '@angular/material/expansion';
+import {FormBuilder, FormControl, FormGroup} from '@angular/forms';
 
 @Component({
   selector: 'app-searchBar',
@@ -7,8 +8,6 @@ import { MatExpansionPanel } from '@angular/material/expansion';
   styleUrls: ['./searchBar.component.scss']
 })
 export class SearchBarComponent implements OnInit {
-
-  @Input() title: string;
 
   @Output() onAddAction = new EventEmitter();
   @ViewChild("expansionPanel") expansionPanel: MatExpansionPanel;

@@ -1,37 +1,50 @@
-<div class="container">
-
-  <mat-accordion>
-    <mat-expansion-panel [disabled]="true" hideToggle #expansionPanel>
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          <h2>{{title}}</h2>
-        </mat-panel-title>
-        <mat-panel-description>
-          <button mat-raised-button color="primary" (click)="showContent()">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
-              viewBox="0 0 16 16">
-              <path
-                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-            </svg>
-          </button>
-          <button mat-raised-button color="primary" (click)="onAddButtonClick()">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-square"
-              viewBox="0 0 16 16">
-              <path
-                d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-              <path
-                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-            </svg>
-          </button>
-        </mat-panel-description>
-
-      </mat-expansion-panel-header>
-
-
-      <p>This is the primary content of the panel.</p>
-
-
-    </mat-expansion-panel>
-  </mat-accordion>
-
+<div class="search-main-section">
+  <div class="container">
+    <mat-accordion>
+      <mat-expansion-panel [disabled]="true" hideToggle #expansionPanel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <h2></h2>
+          </mat-panel-title>
+          <mat-panel-description>
+            <button mat-raised-button color="primary" (click)="showContent()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                viewBox="0 0 16 16">
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+              </svg>
+            </button>
+            <button mat-raised-button color="primary" (click)="onAddButtonClick()">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-square"
+                viewBox="0 0 16 16">
+                <path
+                  d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                <path
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+              </svg>
+            </button>
+          </mat-panel-description>
+  
+        </mat-expansion-panel-header>
+        <div class="popup-main">
+          <div class="example-container">
+            <mat-form-field hintLabel="Max 10 characters" appearance="fill">
+              <mat-label>Enter some input</mat-label>
+              <input matInput #input maxlength="10" placeholder="Ex. Nougat">
+              <mat-hint align="end">{{input.value?.length || 0}}/10</mat-hint>
+            </mat-form-field>
+          
+            <mat-form-field appearance="fill">
+              <mat-label>Select me</mat-label>
+              <mat-select>
+                <mat-option value="option">Option</mat-option>
+              </mat-select>
+              <mat-hint align="end">Here's the dropdown arrow ^</mat-hint>
+            </mat-form-field>
+          </div>
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+  
+  </div>
 </div>
