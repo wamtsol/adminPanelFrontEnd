@@ -10,7 +10,6 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-<<<<<<< HEAD
 .container {
   box-sizing: border-box;
   width: 100%;
@@ -21,14 +20,11 @@ body {
 .mat-expansion-panel-body{
   margin: 0px !important;
 }
-=======
->>>>>>> b7fa890f239488403b9da2ce84afc1841be67b41
 .mat-elevation-z8 {
   box-shadow: none !important;
 }
 
-.mat-drawer-content {
-  overflow-y: inherit !important;
+.mat-drawer-container{
   height: auto !important;
 }
 
