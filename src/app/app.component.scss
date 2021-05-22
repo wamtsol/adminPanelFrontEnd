@@ -37,7 +37,28 @@ button.mat-focus-indicator.mat-menu-trigger.mat-button.mat-button-base{
 }
 mat-panel-title.mat-expansion-panel-header-title.ng-tns-c168-2 {
   display: inline-block;
+  margin-right: 0px;
   .mat-icon{
     float: right;
   }
 }
+.example-sidenav::-webkit-scrollbar {
+ width: 5px;
+
+}
+
+/* Track */
+.example-sidenav::-webkit-scrollbar-track {
+  background: #f1f1f1 !important; 
+}
+ 
+/* Handle */
+.example-sidenav::-webkit-scrollbar-thumb {
+  background: #888 !important; 
+}
+
+/* Handle on hover */
+.example-sidenav::-webkit-scrollbar-thumb:hover {
+  background: #555 !important; 
+}
+ 
