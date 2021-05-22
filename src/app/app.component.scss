@@ -10,6 +10,7 @@
   justify-content: center;
   padding-left: 20px;
   padding-right: 20px;
+  overflow-y: hidden;
 }
 
 .example-sidenav {
@@ -63,11 +64,9 @@ mat-panel-title.mat-expansion-panel-header-title.ng-tns-c168-2 {
 .example-sidenav::-webkit-scrollbar-thumb:hover {
   background: #555 !important;
 }
-<<<<<<< HEAD
-=======
 .mat-expansion-panel-content{
   margin: 0px 20px 0px 20px !important;
-  background-color: #ccc !important;
+  // background-color: #ccc !important;
 }
 .mat-expansion-panel-body{
   padding: 10px;
@@ -76,7 +75,3 @@ mat-panel-title.mat-expansion-panel-header-title.ng-tns-c168-2 {
   display: block;
   padding: 5px;
 }
-.inrside a:hover{
-  background-color: #ccc;
-}
->>>>>>> 268b88cb79faec30676a4b85fd9fffb6e537cb8f
