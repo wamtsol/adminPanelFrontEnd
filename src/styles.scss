@@ -17,7 +17,9 @@ body {
   margin: 0 auto;
   padding: 0 18px;
 }
-
+.mat-expansion-panel-body{
+  margin: 0px !important;
+}
 .mat-elevation-z8 {
   box-shadow: none !important;
 }
