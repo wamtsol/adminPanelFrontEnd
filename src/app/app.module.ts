@@ -19,6 +19,8 @@ import { SearchBarComponent } from './components/searchBar/searchBar.component';
 import { TableComponent } from './components/table/table.component';
 import { TransactionComponent } from './screens/transaction/transaction.component';
 import { MatListModule } from '@angular/material/list';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
 
 
 @NgModule({
@@ -48,6 +50,8 @@ import { MatListModule } from '@angular/material/list';
     MatDialogModule,
     MatExpansionModule,
     MatListModule,
+    MatInputModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
