@@ -37,7 +37,7 @@ button.mat-focus-indicator.mat-menu-trigger.mat-button.mat-button-base {
 .mat-expansion-panel:not([class*="mat-elevation-z"]) {
   box-shadow: none !important;
 }
-mat-panel-title.mat-expansion-panel-header-title.ng-tns-c168-2 {
+mat-panel-title.mat-expansion-panel-header-title{
   display: inline-block;
   margin-right: 0px;
   .mat-icon {
@@ -77,4 +77,10 @@ mat-panel-title.mat-expansion-panel-header-title.ng-tns-c168-2 {
   vertical-align: bottom;
   margin-left: -7px;
   padding-right: 15px;
+}
+.mat-list-item{
+  .mat-icon{
+    vertical-align: bottom;
+  padding-right: 15px;
+  }
 }

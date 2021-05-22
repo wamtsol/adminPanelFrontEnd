@@ -1,3 +1,4 @@
+
 .mat-expansion-panel.ng-tns-c166-3.ng-star-inserted {
   border-radius: unset;
 }
@@ -18,6 +19,17 @@
   box-sizing: border-box;
   text-align: right;
   display: block;
+  button {
+    box-shadow: none !important;
+  }
+}
+.dropdown-inner {
+    width: 100%;
+    max-width: 24.5%;
+    margin: 0 5px 0 0;
+}
+.drop-serach{
+    margin-right: 5px;
   button {
     box-shadow: none !important;
   }
