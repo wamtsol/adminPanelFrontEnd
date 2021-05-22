@@ -8,11 +8,14 @@
   height: 100%;
   align-items: center;
   justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  overflow-y: hidden;
 }
 
 .example-sidenav {
   padding: 20px 0px;
-  width:290px;
+  width:240px;
 }
 
 .example-spacer {
@@ -30,7 +33,7 @@ button.mat-focus-indicator.mat-menu-trigger.mat-button.mat-button-base{
   margin-bottom: 10px;
   width: 200px;
   padding: 10px;
-  
+
 }
 .mat-expansion-panel:not([class*=mat-elevation-z]) {
   box-shadow: none !important;
@@ -49,21 +52,21 @@ mat-panel-title.mat-expansion-panel-header-title.ng-tns-c168-2 {
 
 /* Track */
 .example-sidenav::-webkit-scrollbar-track {
-  background: #f1f1f1 !important; 
+  background: #f1f1f1 !important;
 }
- 
+
 /* Handle */
 .example-sidenav::-webkit-scrollbar-thumb {
-  background: #888 !important; 
+  background: #888 !important;
 }
 
 /* Handle on hover */
 .example-sidenav::-webkit-scrollbar-thumb:hover {
-  background: #555 !important; 
+  background: #555 !important;
 }
 .mat-expansion-panel-content{
   margin: 0px 20px 0px 20px !important;
-  background-color: #ccc !important;
+  // background-color: #ccc !important;
 }
 .mat-expansion-panel-body{
   padding: 10px;
@@ -72,6 +75,8 @@ mat-panel-title.mat-expansion-panel-header-title.ng-tns-c168-2 {
   display: block;
   padding: 5px;
 }
-.inrside a:hover{
-  background-color: #ccc;
+.inr-icn .mat-icon {
+  vertical-align: bottom;
+  margin-left: -7px;
+  padding-right: 15px;
 }

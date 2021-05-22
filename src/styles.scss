@@ -10,6 +10,7 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
+<<<<<<< HEAD
 .container {
   box-sizing: border-box;
   width: 100%;
@@ -20,19 +21,15 @@ body {
 .mat-expansion-panel-body{
   margin: 0px !important;
 }
+=======
+>>>>>>> b7fa890f239488403b9da2ce84afc1841be67b41
 .mat-elevation-z8 {
   box-shadow: none !important;
 }
 
-.mat-drawer-content {
-  overflow-y: clip !important;
-}
-
-.mat-expansion-panel-body {
-    padding: 10px !important;
-    background: #fafafa;
-    margin: 0 20px;
-}
+// .mat-drawer-content {
+//   overflow-y: clip !important;
+// }
 
 h2 {
   color: #fff;
@@ -61,8 +58,6 @@ h2 {
 .cdk-overlay-pane {
   width: 100%;
 }
-
-#mat-dialog-0 {}
 
 .main-popup {
   h2 {
