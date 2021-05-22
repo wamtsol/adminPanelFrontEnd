@@ -10,7 +10,7 @@ import { MatTableDataSource } from '@angular/material/table';
 })
 export class TableComponent implements OnInit, AfterViewInit {
 
-  displayedColumns: string[] = ['select', 'position', 'name', 'weight', 'symbol'];
+  displayedColumns: string[] = ['select', 'position', 'name', 'weight', 'symbol', 'menu'];
   dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
 
   selection = new SelectionModel<PeriodicElement>(true, []);
