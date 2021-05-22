@@ -22,6 +22,9 @@ import { MatListModule } from '@angular/material/list';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -40,6 +43,9 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
     BrowserAnimationsModule,
 
 
+    FormsModule,
+    ReactiveFormsModule,
+
     MatTableModule,
     MatSidenavModule,
     MatToolbarModule,
@@ -54,7 +60,9 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
     MatListModule,
     MatFormFieldModule,
     MatSelectModule,
-    MatDatepickerModule
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
