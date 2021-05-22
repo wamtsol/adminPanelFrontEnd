@@ -61,4 +61,17 @@ mat-panel-title.mat-expansion-panel-header-title.ng-tns-c168-2 {
 .example-sidenav::-webkit-scrollbar-thumb:hover {
   background: #555 !important; 
 }
- 
+.mat-expansion-panel-content{
+  margin: 0px 20px 0px 20px !important;
+  background-color: #ccc !important;
+}
+.mat-expansion-panel-body{
+  padding: 10px;
+}
+.inrside a {
+  display: block;
+  padding: 5px;
+}
+.inrside a:hover{
+  background-color: #ccc;
+}
