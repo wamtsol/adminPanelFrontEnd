@@ -14,9 +14,10 @@ body {
   box-shadow: none !important;
 }
 
-// .mat-drawer-content {
-//   overflow-y: clip !important;
-// }
+.mat-drawer-content {
+  overflow-y: inherit !important;
+  height: auto !important;
+}
 
 h2 {
   color: #fff;
