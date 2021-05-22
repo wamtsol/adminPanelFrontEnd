@@ -1,5 +1,6 @@
 import { SelectionModel } from '@angular/cdk/collections';
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
+import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 
 @Component({
@@ -7,7 +8,7 @@ import { MatTableDataSource } from '@angular/material/table';
   templateUrl: './table.component.html',
   styleUrls: ['./table.component.scss']
 })
-export class TableComponent implements OnInit {
+export class TableComponent implements OnInit, AfterViewInit {
 
   displayedColumns: string[] = ['select', 'position', 'name', 'weight', 'symbol'];
   dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
@@ -15,6 +16,12 @@ export class TableComponent implements OnInit {
   selection = new SelectionModel<PeriodicElement>(true, []);
 
   constructor() { }
+
+  @ViewChild(MatPaginator) paginator: MatPaginator;
+
+  ngAfterViewInit() {
+    this.dataSource.paginator = this.paginator;
+  }
 
   ngOnInit() {
   }
@@ -63,5 +70,12 @@ const ELEMENT_DATA: PeriodicElement[] = [
   { position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N' },
   { position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O' },
   { position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F' },
+  { position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne' },
+  { position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne' },
+  { position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne' },
+  { position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne' },
+  { position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne' },
+  { position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne' },
+  { position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne' },
   { position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne' },
 ];
