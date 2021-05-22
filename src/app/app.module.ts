@@ -1,22 +1,22 @@
 import { NgModule } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatTableModule } from '@angular/material/table';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatPaginatorModule } from '@angular/material/paginator';
-import { MatCheckboxModule } from '@angular/material/checkbox';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { DialogComponent } from './components/dialog/dialog.component';
 import { SearchBarComponent } from './components/searchBar/searchBar.component';
 import { TableComponent } from './components/table/table.component';
 import { TransactionComponent } from './screens/transaction/transaction.component';
-import { MatMenuModule } from '@angular/material/menu';
-import { MatCardModule } from '@angular/material/card';
-import { MatDialogModule } from '@angular/material/dialog';
-import { PopupComponent } from './components/popup/popup.component';
 
 
 @NgModule({
@@ -26,7 +26,7 @@ import { PopupComponent } from './components/popup/popup.component';
 
     TableComponent,
     SearchBarComponent,
-    PopupComponent
+    DialogComponent
   ],
   imports: [
     BrowserModule,

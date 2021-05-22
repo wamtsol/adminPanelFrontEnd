@@ -1,6 +1,6 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { PopupComponent } from 'src/app/components/popup/popup.component';
+import { DialogComponent } from 'src/app/components/dialog/dialog.component';
 // import { MatCheckbox } from '@angular/material/checkbox';
 // import { MatPaginator } from '@angular/material/paginator';
 // import { MatTableDataSource } from '@angular/material/table';
@@ -19,7 +19,7 @@ export class TransactionComponent implements OnInit {
   }
 
   openDialog() {
-    let dialogRef = this.dialog.open(PopupComponent, {
+    let dialogRef = this.dialog.open(DialogComponent, {
       data: {
         title: "Test Title"
       }
