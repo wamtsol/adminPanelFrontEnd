@@ -1,17 +1,20 @@
-.search-right{
-    button {
-        box-shadow: none !important;
-        float: right;
-        margin: 0 6px;
-        svg {
-            width: 20px !important;
-            height: 20px;
-        }
-    }
-}
-.search-left{
-    h2{
-        color: #fff;
-        line-height: 36px;
-    }
-}
+// .search-right{
+//     button {
+//         box-shadow: none !important;
+//         float: right;
+//         margin: 0 6px;
+//         svg {
+//             width: 20px !important;
+//             height: 20px;
+//         }
+//     }
+// }
+// .search-left{
+//     h2{
+//         color: #fff;
+//         line-height: 36px;
+//     }
+// }
+.example-container .mat-form-field + .mat-form-field {
+    margin-left: 8px;
+  }
