@@ -32,3 +32,6 @@ button.mat-focus-indicator.mat-menu-trigger.mat-button.mat-button-base{
   padding: 10px;
   
 }
+.mat-expansion-panel:not([class*=mat-elevation-z]) {
+  box-shadow: none !important;
+}
