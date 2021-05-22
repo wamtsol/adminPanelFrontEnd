@@ -17,6 +17,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatCardModule } from '@angular/material/card';
 import { MatDialogModule } from '@angular/material/dialog';
 import { PopupComponent } from './components/popup/popup.component';
+import {MatListModule} from '@angular/material/list';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { PopupComponent } from './components/popup/popup.component';
     MatCheckboxModule,
     MatMenuModule,
     MatCardModule,
-    MatDialogModule
+    MatDialogModule,
+    MatListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
