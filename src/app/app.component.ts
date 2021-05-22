@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'adminPanel';
   showFiller = false;
+  typesOfShoes: string[] = ['Boots','Clogs', 'Loafers', 'Moccasins', 'Sneakers'];
 }
