@@ -1,4 +1,6 @@
+import { SelectionModel } from '@angular/cdk/collections';
 import { Component, OnInit } from '@angular/core';
+import { MatTableDataSource } from '@angular/material/table';
 
 @Component({
   selector: 'app-table',
@@ -7,12 +9,39 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TableComponent implements OnInit {
 
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
-  dataSource = ELEMENT_DATA;
+  displayedColumns: string[] = ['select', 'position', 'name', 'weight', 'symbol'];
+  dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
+
+  selection = new SelectionModel<PeriodicElement>(true, []);
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  /** Whether the number of selected elements matches the total number of rows. */
+  isAllSelected() {
+    const numSelected = this.selection.selected.length;
+    const numRows = this.dataSource.data.length;
+    return numSelected === numRows;
+  }
+
+  /** Selects all rows if they are not all selected; otherwise clear selection. */
+  masterToggle() {
+    if (this.isAllSelected()) {
+      this.selection.clear();
+      return;
+    }
+
+    this.selection.select(...this.dataSource.data);
+  }
+
+  /** The label for the checkbox on the passed row */
+  checkboxLabel(row?: PeriodicElement): string {
+    if (!row) {
+      return `${this.isAllSelected() ? 'select' : 'deselect'} all`;
+    }
+    return `${this.selection.isSelected(row) ? 'deselect' : 'select'} row ${row.position + 1}`;
   }
 
 }
