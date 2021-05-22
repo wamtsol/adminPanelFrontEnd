@@ -4,7 +4,7 @@
       <mat-expansion-panel [disabled]="true" hideToggle #expansionPanel>
         <mat-expansion-panel-header>
           <mat-panel-title>
-            <h2></h2>
+            <h2>transaction</h2>
           </mat-panel-title>
           <mat-panel-description>
             <button mat-raised-button color="primary" (click)="showContent()">
@@ -24,8 +24,46 @@
               </svg>
             </button>
           </mat-panel-description>
-
         </mat-expansion-panel-header>
+        <div class="search-dropdown">
+          <mat-form-field appearance="fill">
+            <mat-label>Select</mat-label>
+            <mat-select>
+              <mat-option value="one">First option</mat-option>
+              <mat-option value="two">Second option</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Select</mat-label>
+            <mat-select>
+              <mat-option value="one">First option</mat-option>
+              <mat-option value="two">Second option</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field appearance="fill">
+            <mat-label>Select</mat-label>
+            <mat-select>
+              <mat-option value="one">First option</mat-option>
+              <mat-option value="two">Second option</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field class="example-form-field" appearance="fill">
+            <mat-date-range-input
+              [rangePicker]="campaignOnePicker"
+              [comparisonStart]="campaignTwo.value.start"
+              [comparisonEnd]="campaignTwo.value.end">
+              <input matStartDate placeholder="Start date" formControlName="start">
+              <input matEndDate placeholder="End date" formControlName="end">
+            </mat-date-range-input>
+            <mat-datepicker-toggle matSuffix [for]="campaignOnePicker"></mat-datepicker-toggle>
+            <mat-date-range-picker #campaignOnePicker></mat-date-range-picker>
+          </mat-form-field>
+          <div class="example-button-row">
+            <button mat-button>Basic</button>
+            <button mat-button color="primary">Search</button>
+            <button mat-button color="warn">Reset</button>
+          </div>
+        </div>
       </mat-expansion-panel>
     </mat-accordion>
 

@@ -1,7 +1,7 @@
 table {
     width: 100%;
-  }
-  .transaction-table {
+}
+.transaction-table {
     table {
         border-collapse: collapse;
         border: solid 1px #ccc;
@@ -20,7 +20,7 @@ table {
                 text-align: center;
                 border-collapse: collapse;
                 margin: 0;
-                padding: 6px ​14p;
+                padding: 6px 0 !important;
             }
         }
     }

@@ -15,12 +15,16 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .mat-drawer-content {
     overflow-y: clip !important;
 }
+.mat-expansion-panel-body {
+    padding:18px 20px 0px !important;
+}
 h2 {
     color: #fff;
-    font-size: 19px !important;
+    font-size: 20px !important;
     line-height: 37px !important;
     box-sizing: border-box;
     margin: 0 !important;
+    text-transform: uppercase;
 }
 .clearfix {
     display: block;
@@ -30,4 +34,26 @@ h2 {
 }
 .clr{
     clear: both;
+}
+.cdk-overlay-pane {
+    width: 100%;
+}
+#mat-dialog-0{
+}
+.main-popup{
+    h2 {
+        background-color: #3f51b5;
+        padding: 6px 32px;
+        font-size: 20px !important;
+        margin-bottom: 30px !important;
+    }
+    .mat-form-field {
+        width: 100%;
+        max-width: 48%;
+        margin: 0 8px;
+    }
+}
+.cdk-overlay-connected-position-bounding-box .cdk-overlay-pane {
+    width: auto;
+    transform: translateX(-21px) translateY(27px) !important;
 }
