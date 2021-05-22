@@ -88,6 +88,15 @@
     <mat-hint align="end">{{input.value?.length || 0}}/10</mat-hint>
   </mat-form-field>
 
+  <mat-form-field appearance="fill"
+        [hideRequiredMarker]="hideRequiredControl.value"
+        [floatLabel]="floatLabelControl.value">
+      <mat-select required>
+        <mat-option>-- None --</mat-option>
+        <mat-option value="option">Option</mat-option>
+      </mat-select>
+      <mat-label><mat-icon>favorite</mat-icon> <b> Fancy</b> <i> label</i></mat-label>
+    </mat-form-field>
 
 </mat-dialog-content>
 
