@@ -17,35 +17,19 @@
   <mat-drawer #drawer class="example-sidenav" mode="side">
 
     <mat-nav-list>
-      <mat-accordion mat-list-item>
+      <mat-accordion>
         <mat-expansion-panel hideToggle>
           <mat-expansion-panel-header>
             <mat-panel-title>
               Multiple Links    <mat-icon>keyboard_arrow_down</mat-icon>
             </mat-panel-title>
-            <!-- <mat-panel-description>
-                This is a summary of the content
-              </mat-panel-description> -->
           </mat-expansion-panel-header>
-          <p>Link 1</p>
-          <p>Link 2</p>
-          <p>Link 3</p>
-        </mat-expansion-panel>
-      </mat-accordion>
-
-      <mat-accordion mat-list-item>
-        <mat-expansion-panel hideToggle>
-          <mat-expansion-panel-header>
-            <mat-panel-title>
-              Multiple Links
-            </mat-panel-title>
-            <!-- <mat-panel-description>
-                This is a summary of the content
-              </mat-panel-description> -->
-          </mat-expansion-panel-header>
-          <p>Link 1</p>
-          <p>Link 2</p>
-          <p>Link 3</p>
+          <div>
+            <a href="...">Link 1</a>
+            <button mat-icon-button>
+              <mat-icon>info</mat-icon>
+            </button>
+          </div>
         </mat-expansion-panel>
       </mat-accordion>
 
@@ -61,23 +45,6 @@
           <mat-icon>info</mat-icon>
         </button>
       </mat-list-item>
-
-
-      <mat-accordion mat-list-item>
-        <mat-expansion-panel hideToggle>
-          <mat-expansion-panel-header>
-            <mat-panel-title>
-              Multiple Links
-            </mat-panel-title>
-            <!-- <mat-panel-description>
-                This is a summary of the content
-              </mat-panel-description> -->
-          </mat-expansion-panel-header>
-          <p>Link 1</p>
-          <p>Link 2</p>
-          <p>Link 3</p>
-        </mat-expansion-panel>
-      </mat-accordion>
 
 
     </mat-nav-list>

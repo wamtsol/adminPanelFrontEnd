@@ -21,6 +21,7 @@ import { TransactionComponent } from './screens/transaction/transaction.componen
 import { MatListModule } from '@angular/material/list';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
+import { MatDatepickerModule } from '@angular/material/datepicker';
 
 
 
@@ -52,7 +53,8 @@ import { MatSelectModule } from '@angular/material/select';
     MatExpansionModule,
     MatListModule,
     MatFormFieldModule,
-    MatSelectModule
+    MatSelectModule,
+    MatDatepickerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
