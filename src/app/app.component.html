@@ -52,11 +52,21 @@
 
       <mat-list-item *ngIf="!showText">
         <mat-icon [matMenuTriggerFor]="aboveMenu">home</mat-icon>
-        <mat-menu #aboveMenu="matMenu">
+        <mat-menu #aboveMenu="matMenu" xPosition="after" yPosition="above">
           <button mat-menu-item>Item 1</button>
           <button mat-menu-item>Item 2</button>
         </mat-menu>
       </mat-list-item>
+
+      <mat-list-item *ngIf="!showText">
+        <mat-icon [matMenuTriggerFor]="aboveMenu">home</mat-icon>
+        <mat-menu #aboveMenu="matMenu" xPosition="after" yPosition="above">
+          <button mat-menu-item>Item 1</button>
+          <button mat-menu-item>Item 2</button>
+        </mat-menu>
+      </mat-list-item>
+
+
       <mat-list-item>
         <a matLine href="...">
           <mat-icon [ngClass]="{'test': showText}">explore</mat-icon>{{showText? 'Link 2': ''}}
