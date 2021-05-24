@@ -1,4 +1,3 @@
-import { SelectionModel } from '@angular/cdk/collections';
 import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
@@ -13,8 +12,6 @@ export class TableComponent implements OnInit, AfterViewInit {
   displayedColumns: string[] = ['select', 'position', 'name', 'weight', 'symbol', 'menu'];
   dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
 
-  selection = new SelectionModel<PeriodicElement>(true, []);
-
   constructor() { }
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
@@ -25,32 +22,6 @@ export class TableComponent implements OnInit, AfterViewInit {
 
   ngOnInit() {
   }
-
-  /** Whether the number of selected elements matches the total number of rows. */
-  isAllSelected() {
-    const numSelected = this.selection.selected.length;
-    const numRows = this.dataSource.data.length;
-    return numSelected === numRows;
-  }
-
-  /** Selects all rows if they are not all selected; otherwise clear selection. */
-  masterToggle() {
-    if (this.isAllSelected()) {
-      this.selection.clear();
-      return;
-    }
-
-    this.selection.select(...this.dataSource.data);
-  }
-
-  /** The label for the checkbox on the passed row */
-  checkboxLabel(row?: PeriodicElement): string {
-    if (!row) {
-      return `${this.isAllSelected() ? 'select' : 'deselect'} all`;
-    }
-    return `${this.selection.isSelected(row) ? 'deselect' : 'select'} row ${row.position + 1}`;
-  }
-
 }
 
 export interface PeriodicElement {

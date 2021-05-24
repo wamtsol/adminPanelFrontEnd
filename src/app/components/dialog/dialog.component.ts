@@ -13,7 +13,7 @@ export class DialogComponent implements OnInit {
   hideRequiredControl = new FormControl(false);
   floatLabelControl = new FormControl('auto');
 
-  constructor(@Inject(MAT_DIALOG_DATA) public data: DialogData fb: FormBuilder) { 
+  constructor(@Inject(MAT_DIALOG_DATA) public data: DialogData, fb: FormBuilder) {
     this.options = fb.group({
       hideRequired: this.hideRequiredControl,
       floatLabel: this.floatLabelControl,
