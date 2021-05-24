@@ -80,5 +80,8 @@ mat-panel-title.mat-expansion-panel-header-title {
 }
 
 mat-expansion-panel-header {
-  padding: 0 16px;
+  padding: 0 16px !important;
+}
+.mat-expansion-panel-body{
+  padding: 0px !important;
 }
