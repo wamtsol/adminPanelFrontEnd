@@ -20,7 +20,7 @@
 
       <!-- <mat-list-item> -->
 
-      <mat-accordion mat-list-item class="test">
+      <mat-accordion mat-list-item>
         <mat-expansion-panel hideToggle>
           <mat-expansion-panel-header>
             <mat-panel-title *ngIf="showText">
@@ -73,13 +73,13 @@
       <!-- </mat-list-item> -->
       <mat-list-item>
         <a matLine href="...">
-          <mat-icon>explore</mat-icon>{{showText? 'Link 2': ''}}
+          <mat-icon [ngClass]="{'test': showText}">explore</mat-icon>{{showText? 'Link 2': ''}}
         </a>
       </mat-list-item>
 
       <mat-list-item>
         <a matLine href="...">
-          <mat-icon>explore</mat-icon>{{showText? 'Link 3': ''}}
+          <mat-icon [ngClass]="{'test': showText}">explore</mat-icon>{{showText? 'Link 3': ''}}
         </a>
       </mat-list-item>
 
