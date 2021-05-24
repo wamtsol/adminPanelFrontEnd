@@ -3,7 +3,7 @@
     (click)="drawer.toggle()">
     <mat-icon>menu</mat-icon>
   </button>
-  <span>My App</span>
+  <span (click)="showText = !showText">My App</span>
   <span class="example-spacer"></span>
   <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
     <mat-icon>favorite</mat-icon>
@@ -13,42 +13,74 @@
   </button>
 </mat-toolbar>
 
-<mat-drawer-container class="example-container">
+<mat-drawer-container class="example-container" autosize>
   <mat-drawer #drawer class="example-sidenav" mode="side">
 
     <mat-nav-list>
 
-      <mat-accordion>
+      <!-- <mat-list-item> -->
+
+      <mat-accordion mat-list-item class="test">
         <mat-expansion-panel hideToggle>
           <mat-expansion-panel-header>
-            <mat-panel-title>
+            <mat-panel-title *ngIf="showText">
               Multiple Links <mat-icon>keyboard_arrow_down</mat-icon>
             </mat-panel-title>
+            <mat-icon *ngIf="!showText">home</mat-icon>
           </mat-expansion-panel-header>
           <div class="inrside">
 
             <mat-list-item>
-              <a matLine href="..."><mat-icon>home</mat-icon>Link 1</a>
+              <a matLine href="...">
+                <mat-icon>home</mat-icon>{{showText? 'Link 2': ''}}
+              </a>
             </mat-list-item>
 
             <mat-list-item>
-              <a matLine href="..."><mat-icon>explore</mat-icon>Link 2</a>
+              <a matLine href="...">
+                <mat-icon>explore</mat-icon>{{showText? 'Link 2': ''}}
+              </a>
             </mat-list-item>
 
             <mat-list-item>
-              <a matLine href="..."><mat-icon>feedback</mat-icon>Link 3</a>
+              <a matLine href="...">
+                <mat-icon>feedback</mat-icon>{{showText? 'Link 2': ''}}
+              </a>
             </mat-list-item>
           </div>
 
         </mat-expansion-panel>
       </mat-accordion>
 
+      <!-- <a matLine href="...">
+          <mat-icon>explore</mat-icon>Link 1
+        </a>
+
+        <div mat-line *ngIf="showText">
+          <mat-list-item>
+            <a matLine href="...">
+              <mat-icon>explore</mat-icon>Link 2
+            </a>
+          </mat-list-item>
+
+          <mat-list-item>
+            <a matLine href="...">
+              <mat-icon>explore</mat-icon>Link 3
+            </a>
+          </mat-list-item>
+        </div> -->
+
+      <!-- </mat-list-item> -->
       <mat-list-item>
-        <a matLine href="..."><mat-icon>explore</mat-icon>Link 1</a>
+        <a matLine href="...">
+          <mat-icon>explore</mat-icon>{{showText? 'Link 2': ''}}
+        </a>
       </mat-list-item>
 
       <mat-list-item>
-        <a matLine href="..."><mat-icon>explore</mat-icon>Link 2</a>
+        <a matLine href="...">
+          <mat-icon>explore</mat-icon>{{showText? 'Link 3': ''}}
+        </a>
       </mat-list-item>
 
 
