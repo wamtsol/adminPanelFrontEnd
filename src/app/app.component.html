@@ -26,7 +26,9 @@
             <mat-panel-title *ngIf="showText">
               Multiple Links <mat-icon>keyboard_arrow_down</mat-icon>
             </mat-panel-title>
-            <mat-icon *ngIf="!showText">home</mat-icon>
+            <ng-container *ngIf="!showText">
+              <mat-icon>home</mat-icon>
+            </ng-container>
           </mat-expansion-panel-header>
           <div class="inrside">
 

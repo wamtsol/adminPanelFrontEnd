@@ -10,5 +10,6 @@ export class AppComponent {
   title = 'adminPanel';
   showFiller = false;
   showText: boolean = true;
+  showText1: boolean = true;
   typesOfShoes: string[] = ['Boots', 'Clogs', 'Loafers', 'Moccasins', 'Sneakers'];
 }
