@@ -6,9 +6,8 @@
   right: 0;
   background: #eee;
 }
-.main-sidebar-sidenav{
-  width: 250px;
-}
+
+
 .menu-button {
   transition: 300ms ease-in-out;
   transform: rotate(0deg);
@@ -21,7 +20,6 @@
   transition: transform 300ms ease;
   transform: scaleY(0);
   transform-origin: top;
-  padding-left: 30px;
 }
 .submenu.expanded {
   transform: scaleY(1);
@@ -33,12 +31,6 @@
   align-items: center;
   justify-content: center;
 }
-
-.example-sidenav {
-  padding: 20px 0px;
-  // width: 240px;
-}
-
 .example-spacer {
   flex: 1 1 auto;
 }
@@ -84,27 +76,10 @@ mat-panel-title.mat-expansion-panel-header-title {
   background: #555 !important;
 }
 
-.inrside a {
-  display: block;
-  padding: 5px;
+.full-width {
+  width: 290px !important;
 }
-.inrside .mat-icon {
-  vertical-align: bottom;
-  // padding-right: 15px;
-}
-.mat-list-item {
-  .mat-icon {
-    vertical-align: bottom;
-  }
+.left-sidenav-content {
+  margin: 0 10px;
 }
 
-mat-expansion-panel-header {
-  padding: 0 16px !important;
-}
-.mat-expansion-panel-body{
-  padding: 0px !important;
-}
-
-.test{
-  padding-right: 15px;
-}
