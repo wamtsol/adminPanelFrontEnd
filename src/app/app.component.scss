@@ -4,7 +4,6 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: #eee;
 }
 
 
@@ -79,13 +78,9 @@ mat-panel-title.mat-expansion-panel-header-title {
 .full-width {
   width: 200px !important;
 }
-.full-width:hover{
-  position: absolute;
-}
 .left-sidenav-content {
   margin: 0 10px;
  display: block;
-  padding: 5px;
 }
 .inrside .mat-icon {
   vertical-align: bottom;
