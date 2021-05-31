@@ -77,7 +77,10 @@ mat-panel-title.mat-expansion-panel-header-title {
 }
 
 .full-width {
-  width: 290px !important;
+  width: 200px !important;
+}
+.full-width:hover{
+  position: absolute;
 }
 .left-sidenav-content {
   margin: 0 10px;
@@ -103,4 +106,7 @@ mat-expansion-panel-header {
 
 .test{
   padding-right: 15px;
+}
+.mat-expansion-panel-body{
+  padding:0 10px !important;
 }

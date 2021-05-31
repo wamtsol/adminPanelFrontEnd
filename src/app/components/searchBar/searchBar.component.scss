@@ -43,3 +43,11 @@ h2 {
   text-transform: uppercase;
   margin-bottom: 15px !important;
 }
+.mat-expansion-panel-header-title, .mat-expansion-panel-header-description {
+  display: flex;
+  flex-grow: unset !important;
+  margin-right: 0px !important;
+}
+.mat-raised-button{
+  margin-right: 10px;
+}
