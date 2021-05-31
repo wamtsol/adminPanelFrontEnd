@@ -6,7 +6,8 @@
   right: 0;
   background: #eee;
 }
-.main-sidebar-sidenav{}
+
+
 .menu-button {
   transition: 300ms ease-in-out;
   transform: rotate(0deg);
@@ -19,7 +20,6 @@
   transition: transform 300ms ease;
   transform: scaleY(0);
   transform-origin: top;
-  padding-left: 30px;
 }
 .submenu.expanded {
   transform: scaleY(1);
@@ -31,12 +31,6 @@
   align-items: center;
   justify-content: center;
 }
-
-.example-sidenav {
-  padding: 20px 0px;
-  // width: 240px;
-}
-
 .example-spacer {
   flex: 1 1 auto;
 }
@@ -82,8 +76,12 @@ mat-panel-title.mat-expansion-panel-header-title {
   background: #555 !important;
 }
 
-.inrside a {
-  display: block;
+.full-width {
+  width: 290px !important;
+}
+.left-sidenav-content {
+  margin: 0 10px;
+ display: block;
   padding: 5px;
 }
 .inrside .mat-icon {
