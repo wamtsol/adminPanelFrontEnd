@@ -33,3 +33,31 @@ table {
 tr.mat-header-row ,tr.mat-row, tr.mat-footer-row{
     height: 40px !important;
 }
+.visibill{
+    background-color: #17a2b8;
+    color: white;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+}
+.edit{
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+    margin: 0px 2px;
+}
+.close{
+    background-color: #dc3545;
+    color: white;
+    font-size: 14px;
+    border-radius: 4px;
+    line-height: 25px;
+    text-align: center;
+}
+th.mat-header-cell.cdk-header-cell.cdk-column-menu.mat-column-menu {
+    width: 10%;
+}

@@ -2,11 +2,11 @@
 
   <!-- Checkbox Column -->
   <ng-container matColumnDef="menu">
-    <th mat-header-cell *matHeaderCellDef>
-      Check
+    <th style="text-align:end;" mat-header-cell *matHeaderCellDef>
+      Action
     </th>
-    <td mat-cell *matCellDef="let row">
-      <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+    <td style="text-align:end;" mat-cell *matCellDef="let row">
+      <!-- <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
         <mat-icon>more_vert</mat-icon>
       </button>
       <mat-menu #menu="matMenu">
@@ -22,28 +22,34 @@
           <mat-icon>notifications_off</mat-icon>
           <span>Disable alerts</span>
         </button>
-      </mat-menu>
+      </mat-menu> -->
+      <mat-icon class="visibill">visibility</mat-icon>
+      <mat-icon class="edit">edit</mat-icon>
+      <mat-icon class="close">close</mat-icon>
     </td>
   </ng-container>
 
 
-  <!-- Position Column -->
-  <ng-container matColumnDef="position">
-    <th mat-header-cell *matHeaderCellDef> No. </th>
-    <td mat-cell *matCellDef="let element"> {{element.position}} </td>
-  </ng-container>
 
-<!-- Checkbox Column -->
+  <!-- Checkbox Column -->
 <ng-container matColumnDef="select">
-  <th mat-header-cell *matHeaderCellDef>
+  <th style="width: 5%;" mat-header-cell *matHeaderCellDef>
     <mat-checkbox>
     </mat-checkbox>
   </th>
-  <td mat-cell *matCellDef="let row">
+  <td style="width: 5%;" mat-cell *matCellDef="let row">
     <mat-checkbox>
     </mat-checkbox>
   </td>
 </ng-container>
+
+  <!-- Position Column -->
+  <ng-container matColumnDef="position">
+    <th style="width: 5%;" mat-header-cell *matHeaderCellDef> No. </th>
+    <td style="width: 5%;" mat-cell *matCellDef="let element"> {{element.position}} </td>
+  </ng-container>
+
+
 
   <!-- Name Column -->
   <ng-container matColumnDef="name">
@@ -51,6 +57,11 @@
     <td mat-cell *matCellDef="let element"> {{element.name}} </td>
   </ng-container>
 
+  <ng-container matColumnDef="id">
+    <th style="width:5%" mat-header-cell *matHeaderCellDef> id </th>
+    <td style="width:5%" mat-cell *matCellDef="let element"> {{element.id}} </td>
+  </ng-container>
+  
   <!-- Weight Column -->
   <ng-container matColumnDef="weight">
     <th mat-header-cell *matHeaderCellDef> Weight </th>
@@ -62,9 +73,13 @@
     <th mat-header-cell *matHeaderCellDef> Symbol </th>
     <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
   </ng-container>
+  <ng-container matColumnDef="status">
+    <th mat-header-cell *matHeaderCellDef> status</th>
+    <td mat-cell *matCellDef="let element"> {{element.status}} </td>
+  </ng-container>
 
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
   <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 </table>
 
-<mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+<mat-paginator [pageSizeOptions]="[10, 5, 20]" showFirstLastButtons></mat-paginator>
