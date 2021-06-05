@@ -17,7 +17,7 @@ export class TableComponent implements OnInit, AfterViewInit {
 
   constructor(private dialog: MatDialog) { }
   openDialog() {
-    this.dialog.open(DialogComponent);
+    this.dialog.open(MatDialog);
   }
   @ViewChild(MatPaginator) paginator: MatPaginator;
 
