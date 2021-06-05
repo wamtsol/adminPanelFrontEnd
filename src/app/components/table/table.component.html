@@ -23,7 +23,9 @@
           <span>Disable alerts</span>
         </button>
       </mat-menu> -->
-      <mat-icon class="visibill">visibility</mat-icon>
+      <button mat-button (click)="openDialog()">Launch dialog</button>
+
+      <mat-icon (click)="openDialog()" class="visibill">visibility</mat-icon>
       <mat-icon class="edit">edit</mat-icon>
       <mat-icon class="close">close</mat-icon>
     </td>
@@ -44,10 +46,12 @@
 </ng-container>
 
   <!-- Position Column -->
+  <div class="main-popup">
   <ng-container matColumnDef="position">
     <th style="width: 5%;" mat-header-cell *matHeaderCellDef> No. </th>
     <td style="width: 5%;" mat-cell *matCellDef="let element"> {{element.position}} </td>
   </ng-container>
+</div>
 
 
 
@@ -83,3 +87,9 @@
 </table>
 
 <mat-paginator [pageSizeOptions]="[10, 5, 20]" showFirstLastButtons></mat-paginator>
+
+<h1 mat-dialog-title>Dialog with elements</h1>
+<div mat-dialog-content>This dialog showcases the title, close, content and actions elements.</div>
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close>Close</button>
+</div>
