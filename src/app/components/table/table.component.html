@@ -23,7 +23,7 @@
           <span>Disable alerts</span>
         </button>
       </mat-menu> -->
-      <mat-icon class="visibill">visibility</mat-icon>
+      <mat-icon  (click)="openDialog()" class="visibill">visibility</mat-icon>
       <mat-icon class="edit">edit</mat-icon>
       <mat-icon class="close">close</mat-icon>
     </td>
@@ -85,7 +85,6 @@
 </table>
 
 <mat-paginator [pageSizeOptions]="[10, 5, 20]" showFirstLastButtons></mat-paginator>
-
 
 <h1 mat-dialog-title>Dialog with elements</h1>
 <div mat-dialog-content>This dialog showcases the title, close, content and actions elements.</div>

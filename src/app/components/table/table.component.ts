@@ -1,6 +1,8 @@
 import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
+import {MatDialog} from '@angular/material/dialog';
+import { DialogComponent } from '../dialog/dialog.component';
 
 
 @Component({
@@ -13,10 +15,11 @@ export class TableComponent implements OnInit, AfterViewInit {
   displayedColumns: string[] = ['position', 'select', 'id', 'name','name', 'weight','weight', 'symbol', 'status', 'menu'];
   dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
 
+  constructor(private dialog: MatDialog) { }
+  openDialog() {
+    this.dialog.open(DialogComponent);
+  }
   @ViewChild(MatPaginator) paginator: MatPaginator;
-
-  constructor() { }
-
 
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginator;
